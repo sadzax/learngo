@@ -52,11 +52,14 @@ func check_backwards() {
 	the_time := time.Now()
 	fmt.Printf("\n\n\n Ah! By the way tomorrow will be %v \n\n", the_time.Weekday()+1)
 
-	fmt.Println("\n And after all this there will be:")
+	fmt.Println("\n And countdown is a:")
 	for i := 0; i < 10; i++ {
 		k := 10 - i
 		// fmt.Printf("\n %v", the_time.Weekday()+k) // Почему тут не работает?
 		fmt.Println(k)
-		defer fmt.Println(k) // для чего нужен defer?
+		defer fmt.Println(k) // не обязательно в "функции" - но и в "цикле" / "проке"
 	}
+
+	fmt.Println("\n And the backwards again:")
+	// В Go ключевое слово defer используется для отложенного выполнения функции. Это значит, что функция, объявленная с помощью defer, будет вызвана только после завершения окружающей функции (той, в которой находится defer).
 }
