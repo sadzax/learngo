@@ -1,3 +1,5 @@
+// Constants cannot be declared with `:=` syntax !!!
+
 package main
 
 import (
@@ -5,7 +7,7 @@ import (
 	"reflect"
 )
 
-const Pi = 3.14
+const Pi = 3.14 // как указать тип?
 
 // Константы просто пишутся с большой буквы? Зачем?
 // Как их отличить в коде от export- данных?

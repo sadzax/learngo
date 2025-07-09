@@ -18,17 +18,17 @@
 ### Текущий лог:
 
 | ph1 | ph2 | src         | subj      | topic        | meth       | res      | link                                              |
-|-----|-----| ----------- | --------- |--------------|------------|----------|---------------------------------------------------|
-|     |     | go.dev      | *env*     |              |            | *ok*     |                                                   |
+|-----|-----|-------------|-----------|--------------|------------|----------|---------------------------------------------------|
+| 1   |     | go.dev      | *env*     |              |            | *ok*     |                                                   |
 |     |     | go.dev/tour | syntax    |              |            |          |                                                   |
-| 1   | 3   |             | syntax    | *func*       | *tasks*    | *ok* + ? | [1.3.](./tour/1_basics/3_func/main.go)            |
-| 1   | 4   |             | syntax    | *var*        | *tasks*    | *ok*     | [1.4.](./tour/1_basics/4_var/main.go)             |
+| 1   | 1   |             | syntax    | *func*       | *tasks*    | *ok* + ? | [1.3.](./tour/1_basics/3_func/main.go)            |
+| 1   | 4   |             | syntax    | *var*        | *tasks*    | *ok*     |                                                   |
 | 1   | 5   |             | datatypes | *basic*      |            | *ok* + ? | [1.5.](./tour/1_basics/5_basic_datatypes/main.go) |  
 |     |     |             | package   |              | examples   | ?        |                                                   |
 |     |     |             | import    |              | examples   | ?        | [0.0](./tour/0_scratches/0_initial.md)            |
 |     |     |             | export    |              | examples   | ?        |                                                   |
-|     |     |             | syntax    | constants    |            | *ok* + ? | [1.6.](./tour/1_basics/6_const/main.go)           |
-|     |     |             | syntax    | *loop*       | *tasks*    | *ok*     |                                                   |
+| 1   | 6   |             | syntax    | constants    |            | *ok* + ? | [1.6.](./tour/1_basics/6_const/main.go)           |
+| 2   | 1   |             | syntax    | *loop*       | *tasks*    | *ok*     |                                                   |
 |     |     |             | syntax    | *conditions* | *tasks*    | *ok*     |                                                   |
 |     |     |             | syntax    | *switch*     | *tasks*    | *ok*     |                                                   |
 |     |     |             | syntax    | defer        | examples   |          |                                                   |
