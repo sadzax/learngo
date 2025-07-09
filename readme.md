@@ -17,22 +17,22 @@
 
 ### Текущий лог:
 
-| ph1 | ph2 | src         | subj      | topic        | meth       | res  |
-| --- | --- | ----------- | --------- | ------------ | ---------- | ---- |
-| 1   | 1   | go.dev      | *env*     |              |            | *ok* |
-|     | 2   | go.dev/tour | syntax    |              |            |      |
-|     |     |             | syntax    | *func*       | *tasks*    | *ok* |
-|     |     |             | syntax    | *var*        | *tasks*    | *ok* |
-|     |     |             | datatypes | *basic*      |            | *ok* |
-|     |     |             | package   |              | examples   | ?    |
-|     |     |             | import    |              | examples   | ?    |
-|     |     |             | export    |              | examples   | ?    |
-|     |     |             | syntax    | *loop*       | *tasks*    | *ok* |
-|     |     |             | syntax    | *conditions* | *tasks*    | *ok* |
-|     |     |             | syntax    | *switch*     | *tasks*    | *ok* |
-|     |     |             | syntax    | defer        | examples   |      |
-|     |     |             | datatypes | *struct*     | *examples* | *ok* |
-|     |     |             | datatypes | *arrays*     | *tasks*    | *ok* |
-|     |     |             | datatypes | *slices*     | *tasks*    | *ok* |
-|     |     |             | pointers  |              |            | ?    |
+| ph1 | ph2 | src         | subj      | topic        | meth       | res  | link                                   |
+| --- | --- | ----------- | --------- | ------------ | ---------- | ---- |----------------------------------------|
+| 1   | 1   | go.dev      | *env*     |              |            | *ok* |                                        |
+|     | 2   | go.dev/tour | syntax    |              |            |      |                                        |
+|     |     |             | syntax    | *func*       | *tasks*    | *ok* | [1.3.](./tour/1_basics/3_func/main.go) |
+|     |     |             | syntax    | *var*        | *tasks*    | *ok* |                                        |
+|     |     |             | datatypes | *basic*      |            | *ok* |                                        |
+|     |     |             | package   |              | examples   | ?    |                                        |
+|     |     |             | import    |              | examples   | ?    |                                        |
+|     |     |             | export    |              | examples   | ?    |                                        |
+|     |     |             | syntax    | *loop*       | *tasks*    | *ok* |                                        |
+|     |     |             | syntax    | *conditions* | *tasks*    | *ok* |                                        |
+|     |     |             | syntax    | *switch*     | *tasks*    | *ok* |                                        |
+|     |     |             | syntax    | defer        | examples   |      |                                        |
+|     |     |             | datatypes | *struct*     | *examples* | *ok* |                                        |
+|     |     |             | datatypes | *arrays*     | *tasks*    | *ok* |                                        |
+|     |     |             | datatypes | *slices*     | *tasks*    | *ok* |                                        |
+|     |     |             | pointers  |              |            | ?    |                                        |
 
