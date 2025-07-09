@@ -27,7 +27,7 @@
 |     |     |             | package   |              | examples   | ?        |                                                   |
 |     |     |             | import    |              | examples   | ?        | [0.0](./tour/0_scratches/0_initial.md)            |
 |     |     |             | export    |              | examples   | ?        |                                                   |
-|     |     |             | syntax    | constants    |            |          | [1.6.](./tour/1_basics/6_const/main.go)           |
+|     |     |             | syntax    | constants    |            | *ok* + ? | [1.6.](./tour/1_basics/6_const/main.go)           |
 |     |     |             | syntax    | *loop*       | *tasks*    | *ok*     |                                                   |
 |     |     |             | syntax    | *conditions* | *tasks*    | *ok*     |                                                   |
 |     |     |             | syntax    | *switch*     | *tasks*    | *ok*     |                                                   |
