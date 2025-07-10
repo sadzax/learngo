@@ -18,12 +18,12 @@
 ### Текущий лог:
 
 | ph0 | ph1 | ph2 | src         | subj      | topic      | meth     | res    | link                                              |
-|-----|-----|-----| ----------- |-----------|------------|----------|--------|---------------------------------------------------|
+|-----|-----|-----|-------------|-----------|------------|----------|--------|---------------------------------------------------|
 | 1   |     |     | go.dev      | env       |            |          | ok     |                                                   |
 |     |     |     | go.dev/tour | syntax    |            |          |        |                                                   |
-|     | 1   | 1   |             | package   |            | examples | ?      | [1.1](./tour/1_basics/1_hello.md)                 |
-|     |     |     |             | import    |            | examples | ?      | [1.1](./tour/1_basics/1_hello.md)                 |
-|     |     | 2   |             | export    |            | examples | ?      | [1.1](./tour/1_basics/1_hello.md)                 |
+|     | 1   | 1   |             | package   |            | examples | ?      | [1.1](./tour/1_basics/1_hello/main.go)            |
+|     |     |     |             | import    |            | examples | ?      | [1.1](./tour/1_basics/1_hello/main.go)            |
+|     |     | 2   |             | export    |            | examples | ?      | [1.1](./tour/1_basics/1_hello/main.go)            |
 |     |     | 3   |             | syntax    | func       | tasks    | ok + ? | [1.3.](./tour/1_basics/3_func/main.go)            |
 |     |     | 4   |             | syntax    | var        | tasks    | ok     |                                                   |
 |     |     | 5   |             | datatypes | basic      |          | ok + ? | [1.5.](./tour/1_basics/5_basic_datatypes/main.go) |
@@ -33,8 +33,8 @@
 |     |     |     |             | syntax    | switch     | tasks    | ok     |                                                   |
 |     |     |     |             | syntax    | defer      | examples | ok + ? | [2.2.](./tour/2_flowcontrol/2_if/main.go)         |
 |     |     | 3   |             | xrsz      |            |          | ok     |                                                   |
-|     |     |     |             | pointers  |            |          | ?      |                                                   |
-|     |     |     |             | datatypes | struct     | examples | ok     |                                                   |
+|     |     |     |             | pointer   |            |          | ok + ? | [2.4.](./tour/2_flowcontrol/4_pointer/main.go)    |
+|     | 3   | 1   |             | datatypes | struct     | examples | ok + ? | [3.1.](./tour/3_moretypes/1_struct/main.go)       |
 |     |     |     |             | datatypes | arrays     | tasks    | ok     |                                                   |
 |     |     |     |             | datatypes | slices     | tasks    | ok     |                                                   |
 
