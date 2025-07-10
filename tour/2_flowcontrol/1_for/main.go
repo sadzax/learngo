@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(sum_to_the_number(19))
-	fmt.Println(sum_to_the_number_cont(1000))
-	fmt.Println(sum_to_the_number_cont_2(10))
+	fmt.Println(sumToTheNumber(19))
+	fmt.Println(sumToTheNumberCont(1000))
+	fmt.Println(sumToTheNumberCont2(10))
 }
 
-func sum_to_the_number(counter int) int {
+func sumToTheNumber(counter int) int {
 	sum := 0
 	for i := 0; i < counter; i++ {
 		sum += i
@@ -16,7 +16,7 @@ func sum_to_the_number(counter int) int {
 	return sum
 }
 
-func sum_to_the_number_cont(counter int) int {
+func sumToTheNumberCont(counter int) int {
 	sum := 1
 	for sum < counter {
 		sum += sum
@@ -24,7 +24,7 @@ func sum_to_the_number_cont(counter int) int {
 	return sum
 }
 
-func sum_to_the_number_cont_2(counter int) int {
+func sumToTheNumberCont2(counter int) int {
 	sum := 0
 	i := 0
 	for i < counter {

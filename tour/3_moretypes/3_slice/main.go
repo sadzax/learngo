@@ -20,22 +20,19 @@ func main() {
 	fmt.Println(len(coolSlice))
 	fmt.Println(cap(coolSlice))
 
+	fmt.Println("\n NEXT BLOCK beatlesNames:")
 	beatlesNames()
 
 	fmt.Println("\n NEXT BLOCK getSliceLiteral:")
-
 	getSliceLiteral()
 
 	fmt.Println("\n NEXT BLOCK sliceDefault:")
-
 	sliceDefault()
 
 	fmt.Println("\n NEXT BLOCK sliceLenAndCap:")
-
 	sliceLenAndCap()
 
 	fmt.Println("\n NEXT BLOCK ticTacToe:")
-
 	ticTacToe()
 
 	fmt.Println("\n NEXT BLOCK appendToSlice:")
@@ -145,7 +142,7 @@ func printSlice(s []int) {
 func ticTacToe() {
 	// Slice of slices
 	board := [][]string{
-		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"}, // Почему тут "string" ?
 		[]string{"_", "_", "_"}, // как в теории сюда положить другой тип данных?
 		[]string{"_", "_", "_"},
 	}
