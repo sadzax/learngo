@@ -16,11 +16,47 @@ func main() {
 	fmt.Println(cap(coolSlice))
 
 	beatlesNames()
+
+	fmt.Println("\n NEXT BLOCK:")
+
+	getSliceLiteral()
+
+	fmt.Println("\n NEXT BLOCK:")
+
+	sliceDefault()
+
+	fmt.Println("\n NEXT BLOCK:")
+
+	sliceLenAndCap()
 }
 
 // func getArray(arr []int, from int, till int) []int { // Вот так не сработает
 func getArray(arr [6]int, from int, till int) []int { // ??? а вот тут уже обязательно обозначит размер
 	return arr[from:till]
+}
+
+func getSliceLiteral() {
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+	fmt.Printf("\n Type is: %T\n", q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+	fmt.Printf("\n Type is: %T\n", r)
+
+	s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println(s)
+	fmt.Printf("\n Type is: %T\n", s) //  Type is: []struct { i int; b bool } - каждый внутренний элемент struct(литерал\ключ) должен быть определён?
 }
 
 func beatlesNames() {
@@ -46,4 +82,52 @@ func beatlesNames() {
 	fmt.Println(names)
 }
 
+func sliceDefault() {
+	s := []int{2, 3, 5, 7, 11, 13}
+
+	s = s[1:4]
+	fmt.Println(s)
+
+	s = s[:2]
+	fmt.Println(s)
+
+	s = s[1:]
+	fmt.Println(s)
+
+	new_s := []int{2, 3, 5, 7, 11, 13}
+
+	new_s = new_s[:]
+	fmt.Println(new_s)
+}
+
 // Slice - для чего в целом? Это как "пойнтер" в своём роде, но для Array? Slice не создаёт новый набор данных, а оперирует с уже существующим?
+
+func sliceLenAndCap() {
+	s := []int{2, 3, 5, 7, 11, 13}
+	printSlice(s)
+	//len=6 cap=6 [2 3 5 7 11 13]
+	//type is: []int
+
+	// Slice the slice to give it zero length.
+	s = s[:0]
+	printSlice(s)
+	//len=0 cap=6 []
+	//type is: []int
+
+	// Extend its length.
+	s = s[:4] // несмотря на переопределение s выше в len=0 cap=6 [] Go для слайса всё равно взял самый первый array, но...
+	printSlice(s)
+	//len=4 cap=6 [2 3 5 7]
+	//type is: []int
+
+	// Drop its first two values.
+	s = s[2:] // ... тогда почему здесь не [5 7 11 13]? (см. выше пример)
+	printSlice(s)
+	//len=2 cap=4 [5 7]
+	//type is: []int
+}
+
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("type is: %T\n", s)
+}

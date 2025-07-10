@@ -35,8 +35,9 @@
 |     |     | 3   |             |           |            |          | xrsz   | [2.3.](./tour/2_flowcontrol/3_xrsz/main.go)       |
 |     |     |     |             | pointer   |            |          | ok + ? | [2.4.](./tour/2_flowcontrol/4_pointer/main.go)    |
 |     | 3   | 1   |             | datatypes | struct     | examples | ok + ? | [3.1.](./tour/3_moretypes/1_struct/main.go)       |
-|     |     | 2   |             | datatypes | arrays     | tasks    | ok     | [3.2.](./tour/3_moretypes/2_array/main.go)        |
+|     |     | 2   |             | datatypes | arrays     | tasks    | ok + ? | [3.2.](./tour/3_moretypes/2_array/main.go)        |
 |     |     | 3   |             | datatypes | slices     | tasks    | ok + ? | [3.3.](./tour/3_moretypes/3_slice/main.go)        |
+|     |     | 4   |             | datatypes | nil        |          | ok + ? | [3.4.](./tour/3_moretypes/4_nil/main.go)          |
 |     |     |     |             |           |            |          |        | [..](./tour//main.go)                             |
 |     |     |     |             |           |            |          |        | [..](./tour//main.go)                             |
 
