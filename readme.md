@@ -37,7 +37,7 @@
 |     | 3   | 1   |             | datatypes | struct    | examples | ok + ? | [3.1](./tour/3_moretypes/1_struct/main.go)         |
 |     |     | 2   |             | datatypes | array     | tasks    | ok + ? | [3.2](./tour/3_moretypes/2_array/main.go)          |
 |     |     | 3   |             | datatypes | slice     | tasks    | ok + ? | [3.3](./tour/3_moretypes/3_slice/main.go)          |
-|     |     | 3   |             | datatypes | append    | tasks    | ok + ? | [3.3](./tour/3_moretypes/3_slice/main.go)          |
+|     |     |     |             | datatypes | append    | tasks    | ok + ? | [3.3](./tour/3_moretypes/3_slice/main.go)          |
 |     |     | 4   |             | datatypes | nil       |          | ok + ? | [3.4](./tour/3_moretypes/4_nil/main.go)            |
 |     |     |     |             | syntax    | make      |          | ok     | [3.4](./tour/3_moretypes/4_nil/main.go)            |
 |     |     |     |             |           |           |          |        | [.](./tour//main.go)                               |
