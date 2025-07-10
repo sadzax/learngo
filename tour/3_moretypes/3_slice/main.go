@@ -1,6 +1,11 @@
+// Slice - для чего в целом? Это как "пойнтер" в своём роде, но для Array? Slice не создаёт новый набор данных, а оперирует с уже существующим?
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	primes := [6]int{2, 3, 5, 7, 11, 13} // array
@@ -17,17 +22,21 @@ func main() {
 
 	beatlesNames()
 
-	fmt.Println("\n NEXT BLOCK:")
+	fmt.Println("\n NEXT BLOCK getSliceLiteral:")
 
 	getSliceLiteral()
 
-	fmt.Println("\n NEXT BLOCK:")
+	fmt.Println("\n NEXT BLOCK sliceDefault:")
 
 	sliceDefault()
 
-	fmt.Println("\n NEXT BLOCK:")
+	fmt.Println("\n NEXT BLOCK sliceLenAndCap:")
 
 	sliceLenAndCap()
+
+	fmt.Println("\n NEXT BLOCK ticTacToe:")
+
+	ticTacToe()
 }
 
 // func getArray(arr []int, from int, till int) []int { // Вот так не сработает
@@ -100,8 +109,6 @@ func sliceDefault() {
 	fmt.Println(new_s)
 }
 
-// Slice - для чего в целом? Это как "пойнтер" в своём роде, но для Array? Slice не создаёт новый набор данных, а оперирует с уже существующим?
-
 func sliceLenAndCap() {
 	s := []int{2, 3, 5, 7, 11, 13}
 	printSlice(s)
@@ -130,4 +137,30 @@ func sliceLenAndCap() {
 func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 	fmt.Printf("type is: %T\n", s)
+}
+
+func ticTacToe() {
+	board := [][]string{
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"}, // как в теории сюда положить другой тип данных?
+		[]string{"_", "_", "_"},
+	}
+
+	fmt.Println(board)
+	fmt.Printf("\n the type is %T\n", board)
+
+	cell00 := &board[0][0]
+	*cell00 = "X"
+
+	cell22 := &board[2][2]
+	*cell22 = "E"
+
+	// board[2][2] = "K"
+	board[1][2] = "X"
+	board[1][0] = "O"
+	board[0][2] = "X"
+
+	for i := 0; i < len(board); i++ {
+		fmt.Printf("%s\n", strings.Join(board[i], " "))
+	}
 }

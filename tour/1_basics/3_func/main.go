@@ -7,7 +7,7 @@ func swap(x, y string) (string, string) {
 }
 
 //  Почему вот так нельзя? https://go.dev/tour/basics/7
-//  func swap(x, y string) (y,x string) {
+//  func swap(x, y string) (y, x string) {
 //  	return
 //  }
 
