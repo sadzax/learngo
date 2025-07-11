@@ -56,7 +56,7 @@ func check_backwards() {
 	for i := 0; i < 10; i++ {
 		k := 10 - i
 
-		// fmt.Printf("\n %v", the_time.Weekday()+k) // Почему тут не работает?
+		//fmt.Printf("\n %v", the_time.Weekday()+k) // Почему тут не работает?
 		new_time := the_time.Add(time.Duration(24*k) * time.Hour)
 		fmt.Printf("\n %v", new_time)
 

@@ -7,7 +7,7 @@ import (
 	"reflect"
 )
 
-const Pi = 3.14 // как указать тип?
+const laPi = float64(3.14)
 
 // Константы просто пишутся с большой буквы? Зачем?
 // Как их отличить в коде от export- данных?
@@ -15,7 +15,7 @@ const Pi = 3.14 // как указать тип?
 func main() {
 	const World = "世界"
 	fmt.Println("Hello", World)
-	fmt.Println("Happy", Pi, "Day")
+	fmt.Println("Happy", laPi, "Day")
 
 	const Truth = true
 	fmt.Println("Go rules?", Truth)
