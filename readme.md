@@ -43,5 +43,5 @@
 |     |     | 5   |             | syntax    | range     | ok + ? | [3.5](./tour/3_moretypes/5_range/main.go)        |
 |     |     | 6   |             |           |           | xrsz ? | [3.6](./tour/3_moretypes/6_xrsz/main.go)         |
 |     |     | 7   |             | syntax    | map       | ok + ? | [3.7](./tour/3_moretypes/7_map/main.go)          |
-|     |     |     |             | syntax    | range     | ok + ? | [.](./tour///main.go)                            |
+|     |     |     |             |           |           |        | [.](./tour///main.go)                            |
 
