@@ -41,6 +41,11 @@ func (g Gauge) Rounder(x int) float64 {
 	return math.Round(floatNumber*multiplyer) / multiplyer
 }
 
+func (g *Gauge) Scale(x float64) {
+	g.Length *= x
+	g.Width *= x
+}
+
 func main() {
 	someG := Gauge{3, 4}
 	fmt.Println(someG.Abs()) // ==
