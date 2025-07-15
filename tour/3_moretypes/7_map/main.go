@@ -70,15 +70,15 @@ func WordCount(s string) map[string]int {
 	fmt.Println(arrayed_s)
 
 	for i := range arrayed_s { // только итератор
-		if res[arrayed_s[i]] == 0 {
-			res[arrayed_s[i]] = 1
-		} else {
-			res[arrayed_s[i]] = +res[arrayed_s[i]]
-		} // Вот тут не складывается, как будто `res` нужно возвращать
+		//if res[arrayed_s[i]] == 0 {
+		//	res[arrayed_s[i]] = 1
+		//} else {
+		//	res[arrayed_s[i]] = +res[arrayed_s[i]]
+		//} // Вот тут не складывается, как будто `res` нужно возвращать
 
 		//res[arrayed_s[string(i)]] = 1 + int(res[arrayed_s[i]]) // почему тут не работает?
 
-		//res[arrayed_s[i]] = 1 + int(res[arrayed_s[i]])
+		res[arrayed_s[i]] = 1 + int(res[arrayed_s[i]])
 	}
 
 	return res
