@@ -20,23 +20,23 @@ func main() {
 	fmt.Println(len(coolSlice))
 	fmt.Println(cap(coolSlice))
 
+	fmt.Println("\n NEXT BLOCK beatlesNames:")
 	beatlesNames()
 
 	fmt.Println("\n NEXT BLOCK getSliceLiteral:")
-
 	getSliceLiteral()
 
 	fmt.Println("\n NEXT BLOCK sliceDefault:")
-
 	sliceDefault()
 
 	fmt.Println("\n NEXT BLOCK sliceLenAndCap:")
-
 	sliceLenAndCap()
 
 	fmt.Println("\n NEXT BLOCK ticTacToe:")
-
 	ticTacToe()
+
+	fmt.Println("\n NEXT BLOCK appendToSlice:")
+	appendToSlice()
 }
 
 // func getArray(arr []int, from int, till int) []int { // Вот так не сработает
@@ -140,8 +140,9 @@ func printSlice(s []int) {
 }
 
 func ticTacToe() {
+	// Slice of slices
 	board := [][]string{
-		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"}, // Почему тут "string" ?
 		[]string{"_", "_", "_"}, // как в теории сюда положить другой тип данных?
 		[]string{"_", "_", "_"},
 	}
@@ -163,4 +164,19 @@ func ticTacToe() {
 	for i := 0; i < len(board); i++ {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 	}
+}
+
+func appendToSlice() {
+	var s []int // опять же, как отличить array от slice?
+	printSlice(s)
+
+	// Результат аппенда - новый объект?
+	s = append(s, 0)
+	printSlice(s)
+
+	s = append(s, 1) // можно ли выбрать индекс, куда вместить элемент?
+	printSlice(s)
+
+	s = append(s, 2, 3, 4)
+	printSlice(s)
 }

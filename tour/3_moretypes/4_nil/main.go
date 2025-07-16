@@ -10,7 +10,7 @@ func main() {
 
 func createNilArray() {
 	var megaList []int
-	fmt.Println(megaList, len(megaList), cap(megaList))
+	// fmt.Println(megaList, len(megaList), cap(megaList))
 	if megaList == nil { // не объявленные переменные != nil
 		// невозможно слайсить nil-array
 		fmt.Println("Created array is really nil!")

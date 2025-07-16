@@ -32,6 +32,7 @@ func convert() { // Type conversions
 	fmt.Println(x, y, z)
 }
 
+//
 //func check_new_var_mark(i, int) int {
 //	var i float64 = float64(i)
 //	var j float64 = i / 2 // j is an int ?
