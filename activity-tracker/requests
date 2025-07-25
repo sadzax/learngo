@@ -1,0 +1,13 @@
+curl -X POST http://localhost:8080/api/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Oleg","email":"oleg@example.com"}'
+
+
+curl -X POST http://localhost:8080/api/activities \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Sport","description":"Спортивные занятия","user_id":1}'
+
+
+curl -X POST http://localhost:8080/api/track \
+  -H "Content-Type: application/json" \
+  -d '{"activity_id":1,"hours":2.5}'

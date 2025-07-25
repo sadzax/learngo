@@ -18,10 +18,10 @@
 ### Текущий лог:
 
 | ph0 | ph1 | ph2 | subj      | topic     | res     | link                                             |
-| --- | --- | --- | --------- | --------- | ------- | ------------------------------------------------ |
+| --- | --- | --- |-----------|-----------| ------- |--------------------------------------------------|
 | 1   |     |     | env       |           | ok      |                                                  |
 |     |     |     | syntax    |           |         |                                                  |
-|     | 1   | 1   | package   |           | ?       | [1.1](./tour/1_basics/1_hello/main.go)           |
+|     | 1   | 1   | package   |           | ok      | [1.1](./tour/1_basics/1_hello/main.go)           |
 |     |     |     | import    |           | ?       | [1.1](./tour/1_basics/1_hello/main.go)           |
 |     |     | 2   | export    |           | ?       | [1.2](./tour/1_basics/2_export/main.go)          |
 |     |     | 3   | syntax    | func      | ok + ?  | [1.3](./tour/1_basics/3_func/main.go)            |
@@ -46,10 +46,10 @@
 |     |     |     |           |           | xrsz    | [3.7](./tour/3_moretypes/7_map/main.go)          |
 |     |     | 8   | syntax    | funcvalue | ok + ?? | [3.8](./tour/3_moretypes/8_funcvalue/main.go)    |
 |     |     | 9   |           |           | xrsz    | [3.9](./tour/3_moretypes/9_xrsz/main.go)         |
-|     | 4   | 1   | syntax    | methods   | ok + ?  | [4.1](./tour/4_methods/1_method/main.go)         |
+|     | 4   | 1   | methods   | base      | ok + ?  | [4.1](./tour/4_methods/1_method/main.go)         |
+|     |     | 2   | methods   | pointers  | ok + ?  | [4.2](./tour/4_methods/2_pointer/main.go)        |
 |     |     |     |           |           |         | [.](./tour///main.go)                            |
-|     |     |     |           |           |         | [.](./tour///main.go)                            |
-|     |     |     |           |           |         | [.](./tour///main.go)                            |
+
 
 
 link_2 = 'https://codeshare.io/5z8jkG'
