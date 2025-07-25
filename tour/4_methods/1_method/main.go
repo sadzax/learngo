@@ -17,6 +17,7 @@ type Gauge struct {
 
 // Метод Abs для типа Gauge. ///// !!!! ???
 // g — это приёмник (receiver), экземпляр Gauge.
+// Метод = функция с ресивером!
 func (g Gauge) Abs() float64 { // ? надо поставить пробел между func и (), чтобы был именно приёмник?
 	return math.Sqrt(g.Length*g.Length + g.Width*g.Width)
 }
@@ -41,7 +42,7 @@ func (g Gauge) Rounder(x int) float64 {
 	return math.Round(floatNumber*multiplyer) / multiplyer
 }
 
-func (g *Gauge) Scale(x float64) {
+func (g *Gauge) Scale(x float64) { // зачем нужен поинтер тут?
 	g.Length *= x
 	g.Width *= x
 }
@@ -65,8 +66,17 @@ func main() {
 
 // Запись функий, виды:
 
-// 1
+// 1.1 (через ресивер)
 func (g Gauge) SquareRoot() float64 { return math.Sqrt(g.Length*g.Length + g.Width*g.Width) }
+
+// g := Gauge{3, 4}
+// fmt.Println(g.SquareRoot())
+
+// 1.2 (классическая запись)
+func SquareRoot2(g Gauge) float64 { return math.Sqrt(g.Length*g.Length + g.Width*g.Width) }
+
+// g := Gauge{3, 4}
+// fmt.Println(SquareRoot(g))
 
 // 2
 func needInt(x int) int { return x*10 + 1 }
