@@ -20,5 +20,5 @@ func main() {
 	r := routes.SetupRoutes()
 
 	// Запускаем сервер
-	r.Run(":8080")
+	r.Run(":8080") // HANDLE ERROR!!!!!
 }

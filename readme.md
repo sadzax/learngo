@@ -48,8 +48,3 @@
 |     |     | 9   |           |           | xrsz    | [3.9](./tour/3_moretypes/9_xrsz/main.go)         |
 |     | 4   | 1   | methods   | base      | ok + ?  | [4.1](./tour/4_methods/1_method/main.go)         |
 |     |     | 2   | methods   | pointers  | ok + ?  | [4.2](./tour/4_methods/2_pointer/main.go)        |
-|     |     |     |           |           |         | [.](./tour///main.go)                            |
-
-
-
-link_2 = 'https://codeshare.io/5z8jkG'

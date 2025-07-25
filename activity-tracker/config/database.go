@@ -30,7 +30,7 @@ func ConnectDatabase() {
 		log.Fatal("Не удалось подключиться к базе данных:", err)
 	}
 
-	// Автомиграция
+	// Автомиграция (HANDLE ERROR!)
 	database.AutoMigrate(&models.User{}, &models.Activity{}, &models.ActivityLog{})
 
 	DB = database
